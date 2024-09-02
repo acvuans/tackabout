@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="biggin">
+        <div class="left">
+            <div class="one">
+                机器人聊天软件
+            </div>
+            <div class="two">
+                <div class="two_me">
+                    <!-- <img class="bbll_Plc" src="" alt="">
+                    <div class="bbll_Message"></div>
+                    <div class="bbll_Time"></div> -->
+                </div>
+                <div class="two_rbt">
+                    <!-- <div class="bbll_Message"></div>
+                    <div class="bbll_Time"></div>
+                    <img class="bbll_Plc" src="" alt=""> -->
+                </div>
+                
+            </div>
+            <div class="three">
+                <form class="three_input">
+                    <input class="txtmsg" type="text" placeholder="请输入内容">
+                    <button>发送消息</button>
+                </form>
+                <!-- <div class="three_btn">
+                    <button>发送消息</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="aside">
+            <div class="aside_top">
+                <img class="ppmm" src="" alt=""><r>
+                <p class="nickname"></p>
+                <p class="loginId"></p>
+            </div>
+            <div class="aside_buttom">
+                <button>不聊点这里就滚</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/api.js"></script>
+<script src="./js/index.js"></script>
+<style scoped>
+    .biggin{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 1000px;
+        height: 500px;
+        border: 1px solid skyblue;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .left {
+        display: flex;
+        flex-direction:column;
+        width: 700px;
+    }
+    .aside {
+        width: 300px;
+        height: 500px;
+        background-color: skyblue;
+        position: relative;
+    }
+
+    .aside_top {
+        position: absolute;
+        display: flex;
+        top: 20%;
+        left: 20%;
+        >img {
+            width: 100px;
+            height: 100px;
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .aside_buttom {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+    }
+    .one {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background: #eceff1;
+        line-height: 50px;
+        justify-content: center;
+        background: yellow;
+    }
+    .two {
+        width: 100%;
+        height: 300px;
+        background: #f5f5f5;
+        overflow-y: scroll;
+    }
+    .two_me {
+        float: left;
+        width: 200px;
+    }
+    .two_rbt {
+        float: right;
+        width: 200px;
+    }
+    .bbll_Plc {
+        width: 50px;
+            height: 50px;
+            margin-right: 30px;
+            border-radius: 50%;
+    }
+    .bbll_Message{
+        width: 200px;
+    }
+    .three {
+        position: relative;
+        display: flex;
+        width: 700px;
+        height: 150px;
+    }
+    .three_input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        >input {
+            width: 99%;
+            height: 96%;
+        }
+    }
+    .three_btn {
+        width: 50px;
+        height: 10px;
+        >button {
+            font-size: 15px;
+            background-color: greenyellow;
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+        }
+    }
+</style>
+</html>

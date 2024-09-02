@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+   <form class="user-form" name="user-form">
+    <div class="bigger">
+        <div class="one">
+            注册页面
+        </div>
+        <div class="two">
+            <input id="txtLoginId" name="loginId" type="text" placeholder="请输入账号">
+            <p class="err"></p>
+        </div>
+        <div class="two">
+            <input id="txtNickName" name="nickname" type="text" placeholder="请输入昵称">
+            <p class="err"></p>
+        </div>
+        <div class="two">
+            <input id="txtLoginPwd" name="loginPwd" type="password" placeholder="请输入密码">
+            <p class="err"></p>
+        </div>
+        <div class="two">
+            <input id="txtLoginPwdConfirm" name="loginPwdConfirm" type="password" placeholder="请重复输入密码">
+            <p class="err"></p>
+        </div>
+        <button class="refBtn">注册</button>
+    </div>
+   </form>
+</body>
+<script src="./js/api.js"></script>
+<script src="./js/user.js"></script>
+<script src="./js/reg.js"></script>
+<style scoped>
+    .bigger {
+        width: 600px;
+        height: 450px;
+        border: 1px solid skyblue;
+        margin: 200px auto 0 auto;
+        text-align: center;
+        background-color: pink;
+        position: relative;
+    }
+    
+    .one {
+        margin: 20px auto;
+        font-size: 30px;
+    }
+
+    .two {
+        margin: 20px auto;
+    }
+
+    #txtLoginId {
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #txtNickName {
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #txtLoginPwd {
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #txtLoginPwdConfirm {
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .err {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .refBtn {
+        position: absolute;
+        border-radius: 10%;
+        top: 80%;
+        left: 25%;
+        width: 300px;
+        height: 50px;
+        background: greenyellow;
+        line-height: 50px;
+    }
+</style>
+</html>

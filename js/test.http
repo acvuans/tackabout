@@ -1,0 +1,8 @@
+# GET https://study.duyiedu.com/api/herolist
+POST http://study.duyiedu.com/api/user/login
+Content-Type: application/json
+
+{
+    "loginId":"vuans",
+    "loginPwd":"123" 
+}
